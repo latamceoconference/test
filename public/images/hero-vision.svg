@@ -1,0 +1,37 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1100 260) rotate(120) scale(900 700)">
+      <stop stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 740) rotate(-20) scale(860 680)">
+      <stop stop-color="#A5F3FC" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#A5F3FC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="blur" x="-200" y="-200" width="2000" height="1600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- soft fields -->
+  <rect width="1600" height="1200" fill="url(#g1)"/>
+  <rect width="1600" height="1200" fill="url(#g2)"/>
+
+  <!-- lens rings -->
+  <g filter="url(#blur)" opacity="0.9">
+    <circle cx="1120" cy="620" r="340" stroke="url(#ring)" stroke-width="22"/>
+    <circle cx="1120" cy="620" r="250" stroke="url(#ring)" stroke-width="18" opacity="0.85"/>
+    <circle cx="1120" cy="620" r="155" stroke="url(#ring)" stroke-width="14" opacity="0.75"/>
+  </g>
+
+  <!-- highlight -->
+  <path d="M920 540C980 470 1080 430 1170 440" stroke="#E0F2FE" stroke-opacity="0.35" stroke-width="10" stroke-linecap="round"/>
+  <path d="M980 835C1030 900 1120 940 1210 935" stroke="#22D3EE" stroke-opacity="0.25" stroke-width="10" stroke-linecap="round"/>
+</svg>
+
+
